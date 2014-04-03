@@ -118,6 +118,7 @@ hr {
     background: linear-gradient( /* W3C */ to bottom, #a7b0a7 0%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
 }
 .redCreate {
+    margin-left: 11%;
     background: #666666;
     color: white;
     background: -moz-linear-gradient( /* FF3.6+ */ top, #AC1919 0%, #8A1414 33%, #7C1212 66%, #610E0E);
@@ -129,6 +130,7 @@ hr {
 
 #dropdown {
     text-align: center;
+    margin-left: 19%;
     width: auto;
     display: inline-block;
 }
@@ -142,7 +144,21 @@ hr {
     font-size: 16px;
 }
 
+#postSort {
+    text-align: right;
+    margin-right: 5%;
+}
+
+#postSort .date {
+    display: inline-block;
+}
+
+#postSort .price {
+    display: inline-block;
+}
+
 #post {
+    background-color: #f4f4f4;
     border: 1px solid;
     border-radius: .1em; 
     padding: 1%;

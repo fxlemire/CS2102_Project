@@ -33,34 +33,59 @@
         <div id="dropdown">
             <select id="attributes" name="Brand">
                 <option value="">Brand</option>
+                <option value="">Acer</option>
+                <option value="">Apple</option>
+                <option value="">Asus</option>
+                <option value="">BlackBerry</option>
+                <option value="">HTC</option>
+                <option value="">Motorola</option>
+                <option value="">Nokia</option>
+                <option value="">Samsung</option>
+                <option value="">Sony</option>
             </select>
             <select id="attributes" name="Model">
                 <option value="">Model</option>
             </select>
-            <select id="attributes" name="New">
+            <select id="attributes" name="Condition">
+                <option value="">Condition</option>
                 <option value="">New</option>
+                <option value="">Used</option>
             </select>
             <select id="attributes" name="OS">
-                <option value="">OS</option>
+                <option value="">Android</option>
+                <option value="">BlackBerry</option>
+                <option value="">iOS</option>
+                <option value="">Windows</option>
             </select>
-            <select id="attributes" name="Unlocked">
+            <select id="attributes" name="Jail">
+                <option value="">Jail</option>
+                <option value="">Locked</option>
                 <option value="">Unlocked</option>
             </select>
             <select id="attributes" name="Price">
                 <option value="">Price</option>
+                <option value="">&lt; 100</option>
+                <option value="">100 - 199</option>
+                <option value="">200 - 299</option>
+                <option value="">300 - 399</option>
+                <option value="">400 - 499</option>
+                <option value="">&gt; 500</option>
             </select>
         </div>
 
         <a class="greenSearch button" href="" title="Search">Search</a>
 
-        <a class="redCreate button" href="" title="Create">Create</a>
+        <a class="redCreate button" href="" title="Create">Create Post</a>
     </div>
 
     <hr>
     
 
     <div id="results">
-
+        <div id="postSort">
+            <div class="date">date <span id="dateArrow">&#9660;</span></div>
+            <div class="price">price <span id="priceArrow">&#9661;</span></div>
+        </div>
         <div id="post">
             <div class="left">
                 <img class="adPic" src="" alt="phone" />
