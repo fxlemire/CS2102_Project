@@ -217,7 +217,7 @@ div.home#dropdown {
     min-width: 94%;
 }
 
-.left {
+#post div.left {
     display: inline-block; 
     width: 5em;
     height: 7em;
@@ -227,7 +227,7 @@ img.adPic {
     height:100%;
 }
 
-.middle {
+#post div.middle {
     vertical-align: top;
     display: inline-block;
     min-width: 80%;
@@ -240,7 +240,7 @@ img.adPic {
     display: inline-block;
 }
 
-.right {
+#post div.right {
     display: inline-block;
     text-align: right;
     min-width: 13%;
@@ -270,6 +270,11 @@ img.adPic {
 
 
 /* CREATE.HTML */
+
+#createPost {
+    margin: 1%;
+    display: block;
+}
 
 fieldset#createPost {
     padding: 2%;
@@ -314,4 +319,62 @@ fieldset#signUp li {
 #signUpButton {
     display: inline-block;
     margin-left: 5%;
+}
+
+
+/* ACCOUNT.HTML */
+
+#credentials {
+    margin: 1%;
+    display: block;
+}
+
+#credentials legend {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#credentials div.data {
+    display: inline-block;
+}
+
+#credentials div.left {
+    display: inline-block;
+}
+
+#credentials div.right {
+    display: inline-block;
+}
+
+#credentials li {
+    list-style-type: none;
+    padding: .5em;
+    margin-right: 15em;
+}
+
+#myPosts {
+    margin: 1%;
+    display: block;
+}
+
+#myPosts div#postSort {
+    margin: 0;
+    max-width: 92%;
+}
+
+#myPosts div#post {
+    margin: 1% 0%;
+    min-width: 90%;
+    display: inline-block;
+}
+
+#myPosts div.options {
+    display: inline-block;
+    list-style-type: none;
+    height: auto;
+    margin-left: 1%;
+}
+
+#myPosts li {
+    padding: 10%;
 }
