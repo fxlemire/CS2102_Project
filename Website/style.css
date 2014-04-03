@@ -440,3 +440,56 @@ fieldset#signUp li {
 #reportedPosts li {
     padding: 10%;
 }
+
+
+/* POST.HTML */
+
+#postDetails {
+    margin: 1%;
+    display: block;
+}
+
+#postDetails div.top { display:block; }
+#postDetails div.title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+}
+#postDetails div.postID {
+    display: inline-block;
+    float: right;
+}
+
+#postDetails div.middle {
+    display:block;
+    margin: 2% 0%;
+}
+#postDetails div.left {
+    width: 10em;
+    height: 14em;
+    display: inline-block;
+}
+#postDetails div.right {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+}
+
+#postDetails li {
+    display: block;
+    list-style-type: none;
+    padding: 20% 0%;
+}
+
+#postDetails div.bottom { display:block; }
+
+#postActions {
+    margin: 2% 1%;
+    display: block;
+}
+#postActions div.remember { display: inline-block; }
+#postActions div.report { display: inline-block; }
+#postActions a { font-size: 10px; }
+#postActions a.remember { color: blue; }
+#postActions a.report { color: red; }
