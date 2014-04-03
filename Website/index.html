@@ -6,31 +6,172 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <h1>The Phone Market</h1>
-    <h2>~ where selling and buying mobile phones suddenly becomes easy ~</h2>
-
-    <div id="dropdown">
-        <select id="attributes" name="Brand">
-            <option value="">Brand</option>
-        </select>
-        <select id="attributes" name="Model">
-            <option value="">Model</option>
-        </select>
-        <select id="attributes" name="OS">
-            <option value="">OS</option>
-        </select>
-        <select id="attributes" name="Unlocked">
-            <option value="">Unlocked</option>
-        </select>
-        <select id="attributes" name="Price">
-            <option value="">Price</option>
-        </select>
+    <div id="header">
+        <div class="header-box">
+            <div class="title">
+                The Phone Market - Mobile Phone Classified Ads
+                <span class="subtitle">
+                    ~ where selling and buying mobile phones suddenly becomes easy ~
+                </span>
+            </div>
+            <div class="noAccount">
+                <a href="">no account? Sign up!</a>
+            </div>
+            <div class="login">
+                <form name="userLogin" method="post" action="userLogin.php">
+                    <label for="username">Username:</label>
+                    <input id="username" name="username" type="text" size="10">
+                    <label for="password">Password:</label>
+                    <input id="password" name="password" type="password" size="10">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
 
-    <a class="search" href="" title="Search">Search</a>
+    <div id="search-create-bar">
+        <div id="dropdown">
+            <select id="attributes" name="Brand">
+                <option value="">Brand</option>
+            </select>
+            <select id="attributes" name="Model">
+                <option value="">Model</option>
+            </select>
+            <select id="attributes" name="New">
+                <option value="">New</option>
+            </select>
+            <select id="attributes" name="OS">
+                <option value="">OS</option>
+            </select>
+            <select id="attributes" name="Unlocked">
+                <option value="">Unlocked</option>
+            </select>
+            <select id="attributes" name="Price">
+                <option value="">Price</option>
+            </select>
+        </div>
+
+        <a class="greenSearch button" href="" title="Search">Search</a>
+
+        <a class="redCreate button" href="" title="Create">Create</a>
+    </div>
+
+    <hr>
+    
 
     <div id="results">
 
+        <div id="post">
+            <div class="left">
+                <img class="adPic" src="" alt="phone" />
+            </div>
+
+            <div class="middle">
+                <div class="adTitle">
+                    1 month-old Samsung Galaxy S4!!!!
+                </div>
+                <div class="adDesc">
+                    This is a phone I bought last month, and it is in super great condition! It is unlocked, rooted, and it just rocks!
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="adDate">
+                    03-04-2014
+                </div>
+                <div class="adPrice">
+                    $ 300
+                </div>
+            </div>
+        </div>
+
+        <div id="post">
+            <div class="left">
+                <img class="adPic" src="" alt="phone" />
+            </div>
+
+            <div class="middle">
+                <div class="adTitle">
+                    1 month-old Samsung Galaxy S4!!!!
+                </div>
+                <div class="adDesc">
+                    This is a phone I bought last month, and it is in super great condition! It is unlocked, rooted, and it just rocks!
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="adDate">
+                    03-04-2014
+                </div>
+                <div class="adPrice">
+                    $ 300
+                </div>
+            </div>
+        </div>
+
+        <div id="post">
+            <div class="left">
+                <img class="adPic" src="" alt="phone" />
+            </div>
+
+            <div class="middle">
+                <div class="adTitle">
+                    1 month-old Samsung Galaxy S4!!!!
+                </div>
+                <div class="adDesc">
+                    This is a phone I bought last month, and it is in super great condition! It is unlocked, rooted, and it just rocks!
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="adDate">
+                    03-04-2014
+                </div>
+                <div class="adPrice">
+                    $ 300
+                </div>
+            </div>
+        </div>
+
+        <div id="post">
+            <div class="left">
+                <img class="adPic" src="" alt="phone" />
+            </div>
+
+            <div class="middle">
+                <div class="adTitle">
+                    1 month-old Samsung Galaxy S4!!!!
+                </div>
+                <div class="adDesc">
+                    This is a phone I bought last month, and it is in super great condition! It is unlocked, rooted, and it just rocks!
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="adDate">
+                    03-04-2014
+                </div>
+                <div class="adPrice">
+                    $ 300
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <div id="footer">
+        <div id="bottom-page-links">
+            <a href="">&laquo;</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            ...
+            <a href="">47</a>
+            <a href="">48</a>
+            <a href="">49</a>
+            <a href="">&raquo;</a>
+        </div>
+    </div>
+
 </body>
 </html>

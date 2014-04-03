@@ -1,33 +1,104 @@
 html {
-    background-color: grey;
-}
-h1 {
-    text-align: center;
-}
-h2 {
-    text-align: center;
+    background-color: #FBFBFB;
 }
 
-.search:hover {
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-bottom: 1.5%;
+}
+
+.header-box {
+    padding: .3em 1em;
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: justify;
+    -ms-box-align: center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: justify;
+    -moz-box-align: center;
+
+    /* Safari, Chrome, and Opera */
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-orient: horizontal;
+    box-pack: justify;
+    box-align: center;
+}
+
+#header div.title {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#header span.subtitle {
+    display: block;
+    text-transform: none;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#header div.noAccount {
+    text-align: right;
+
+    /* Internet Explorer 10 */
+    -ms-flex: 1;
+
+    /* Firefox */
+    -moz-box-flex: 1;
+
+    /* Safari, Chrome, and Opera */
+    -webkit-box-flex: 1;
+
+    /* W3C */
+    box-flex: 1;
+    margin-left: 2%;
+}
+
+#header div.noAccount a {
+    color: red;
+}
+
+#header div.login {
+    margin-left: 2%;
+}
+
+hr {
+    margin:2% 10%;
+}
+
+.greenSearch:hover {
     background: #4e574e;
 }
+.redCreate:hover {
+    background: #6E1010;
+}
 
-.search {
+.button {
+    text-align: center;
     display: inline-block;
-    max-width: 50%;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 100;
-    float: right;
-    margin: 0px 10%;
-    padding: 3em 12em;
-    background: #666666;
-    color: white;
-    background: -moz-linear-gradient( /* FF3.6+ */ top, #a7b0a7 0%, #7f8c7f 33%, #727f72 66%, #4e574e);
-    background: -o-linear-gradient( /* Opera 11.10+ */ top, #a7b0a7 -%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
-    background: -ms-linear-gradient( /* IE10+ */ top, #a7b0a7 0%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
-    background: linear-gradient( /* W3C */ to bottom, #a7b0a7 0%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
+    margin-left: 5%;
+    padding: .3em .5em;
 
     filter: progid:DXImageTransform.Microsoft.gr_ /*IE6-9 */ startColorstr='#a7b0a7', endColorstr=_
     -moz-border-radius: 2px;
@@ -38,12 +109,99 @@ h2 {
     box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 0px 2px rgba(255,255,255,1);
     text-shadow: 0px -1px 0px rgba(000,000,000,0.2), 0px 1px 0px rgba(255,255,255,0.4);
 }
+.greenSearch {
+    background: #666666;
+    color: white;
+    background: -moz-linear-gradient( /* FF3.6+ */ top, #a7b0a7 0%, #7f8c7f 33%, #727f72 66%, #4e574e);
+    background: -o-linear-gradient( /* Opera 11.10+ */ top, #a7b0a7 -%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
+    background: -ms-linear-gradient( /* IE10+ */ top, #a7b0a7 0%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
+    background: linear-gradient( /* W3C */ to bottom, #a7b0a7 0%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
+}
+.redCreate {
+    background: #666666;
+    color: white;
+    background: -moz-linear-gradient( /* FF3.6+ */ top, #AC1919 0%, #8A1414 33%, #7C1212 66%, #610E0E);
+    background: -o-linear-gradient( /* Opera 11.10+ */ top, #a7b0a7 -%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
+    background: -ms-linear-gradient( /* IE10+ */ top, #a7b0a7 0%, #7f8c7f 33%, #727f72 66%, #4e574e 100%);
+    background: linear-gradient( /* W3C */ to bottom, #AC1919 0%, #8A1414 33%, #7C1212 66%, #610E0E 100%);
+
+}
 
 #dropdown {
+    text-align: center;
+    width: auto;
     display: inline-block;
-    max-width: 33%;
+}
+
+#search-create-bar {
+    text-align: center;
 }
 
 #attributes {
+    padding: .3em .5em;
+    font-size: 16px;
+}
+
+#post {
+    border: 1px solid;
+    border-radius: .1em; 
+    padding: 1%;
+    margin: 1% 5%;
+}
+
+#briefPostAttributes {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 94%;
+}
+
+.left {
+    display: inline-block; 
+    width: 5em;
+    height: 7em;
+}
+img.adPic {
+    width:100%;
+    height:100%;
+}
+
+.middle {
+    vertical-align: top;
+    display: inline-block;
+    min-width: 80%;
+}
+.adTitle {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.adDesc {
+    display: inline-block;
+}
+
+.right {
+    display: inline-block;
+    text-align: right;
+    min-width: 13%;
+    min-height: 90%;
+    vertical-align: top;
+}
+.adDate {
     display: block;
+    margin-bottom: 10%;
+    font-size: 12px;
+}
+.adPrice {
+    display: block;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#bottom-page-links {
+    text-align: center;
+    font-size: 16px;
+    padding: .3em 0em;
+}
+
+#bottom-page-links a {
+    padding: 0em .5em;
 }
