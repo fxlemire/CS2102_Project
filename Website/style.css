@@ -276,22 +276,22 @@ img.adPic {
     display: block;
 }
 
-fieldset#createPost {
+#createPost fieldset#createPost {
     padding: 2%;
 }
 
-label#title {
+#createPost label#title {
     margin-top: 2%;
 }
-#title {
+#createPost input#title {
     display: block;
 }
 
-label#description {
+#createPost label#description {
     display:block;
 }
 
-#description {
+#createPost textarea#description {
     display: inline-block;
 }
 
@@ -357,6 +357,11 @@ fieldset#signUp li {
     display: block;
 }
 
+#myPosts legend {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
 #myPosts div#postSort {
     margin: 0;
     max-width: 92%;
@@ -376,5 +381,62 @@ fieldset#signUp li {
 }
 
 #myPosts li {
+    padding: 10%;
+}
+
+
+/* ADMIN.HTML */
+
+#searchUser {
+    margin: 1%;
+    display: block;
+}
+#searchUser legend {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#searchUser li { display: inline; }
+#searchUser ul { display: inline; }
+#searchUserButton { margin-left: 5%; } 
+
+#searchPost {
+    margin: 1%;
+    display: block;
+}
+#searchPost legend {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#searchPost li { display: inline; }
+#searchPost ul { display: inline; }
+#searchPostButton { margin-left: 5%; }
+
+#reportedPosts {
+    margin: 1%;
+    display: block;
+}
+#reportedPosts legend {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#reportedPosts div#postSort {
+    margin: 0;
+    max-width: 92%;
+}
+
+#reportedPosts div#post {
+    margin: 1% 0%;
+    min-width: 90%;
+    display: inline-block;
+}
+
+#reportedPosts div.options {
+    display: inline-block;
+    list-style-type: none;
+    height: auto;
+    margin-left: 1%;
+}
+
+#reportedPosts li {
     padding: 10%;
 }

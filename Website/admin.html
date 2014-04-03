@@ -15,7 +15,7 @@
                 </span>
             </div>
             <div class="noAccount">
-                logged in as <a href="">Arnold Schwarzenegger</a>
+                logged in as <a href="">Arnold Schwarzenegger (ADMIN)</a>
             </div>
             <div class="login">
                 <a href="">log out</a>
@@ -40,8 +40,61 @@
         <input id="editAccountButton" type="submit" value="edit account">
     </fieldset>
 
-    <fieldset id="myPosts">
-        <legend>My Posts</legend>
+    <fieldset id="searchUser">
+        <legend>Search User</legend>
+        <form name="searchUser" method="post" action="searchUser.php">
+            <ul>
+                <li>
+                    <label for="userID">user ID:</label>
+                    <input id="userID" name="userID" type="text">
+                </li>
+                <li>
+                    <label for="email">e-mail:</label>
+                    <input id="email" for="email" type="text">
+                </li>
+                <li>
+                    <label id="firstName" for="firstName">first name:</label>
+                    <input id="firstName" for="firstName" type="text">
+                </li>
+                <li>
+                    <label id="lastName" for="lastName">last name:</label>
+                    <input id="lastName" for="lastName" type="text">
+                </li>
+                <li>
+                    <label id="country" for="country">country:</label>
+                    <input id="country" for="country" type="text">
+                </li>
+            </ul>
+
+            <input id="searchUserButton" type="submit" value="Search">
+        </form>
+    </fieldset>
+
+    <fieldset id="searchPost">
+        <legend>Search Post</legend>
+        <form name="searchPost" method="post" action="searchPost.php">
+            <ul>
+                <li>
+                    <label for="title">title:</label>
+                    <input id="title" name="title" type="text">
+                </li>
+                <li>
+                    <label for="date">date:</label>
+                    <input id="date" for="date" type="text">
+                </li>
+                <li>
+                    <label id="postID" for="postID">post ID:</label>
+                    <input id="postID" for="postID" type="text">
+                </li>
+            </ul>
+
+            <input id="searchPostButton" type="submit" value="Search">
+        </form>
+    </fieldset>
+
+
+    <fieldset id="reportedPosts">
+        <legend>Reported Posts</legend>
         <div id="results">
             <div id="postSort">
                 <div class="date">date <span id="dateArrow">&#9660;</span></div>
