@@ -83,7 +83,7 @@ hr {
     margin:2% 10%;
 }
 
-#search-create-bar {
+div#search-create-bar {
     /* Internet Explorer 10 */
     display: -ms-flexbox;
     -ms-box-orient: horizontal;
@@ -280,6 +280,18 @@ img.adPic {
     padding: 2%;
 }
 
+#createPost div#search-create-bar {
+    display: block;
+}
+
+#createPost div#dropdown {
+    display: block;
+}
+
+#createPost input#price {
+    padding: .4%;
+}
+
 #createPost label#title {
     margin-top: 2%;
 }
@@ -336,6 +348,11 @@ fieldset#signUp li {
 
 #credentials div.data {
     display: inline-block;
+    font-weight: 800;
+}
+
+#credentials span {
+    font-weight: normal;
 }
 
 #credentials div.left {
@@ -479,7 +496,7 @@ fieldset#signUp li {
 #postDetails li {
     display: block;
     list-style-type: none;
-    padding: 20% 0%;
+    padding: 10% 0%;
 }
 
 #postDetails div.bottom { display:block; }
@@ -490,6 +507,6 @@ fieldset#signUp li {
 }
 #postActions div.remember { display: inline-block; }
 #postActions div.report { display: inline-block; }
-#postActions a { font-size: 10px; }
+#postActions a { font-size: 12px; }
 #postActions a.remember { color: blue; }
 #postActions a.report { color: red; }
