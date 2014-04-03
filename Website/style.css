@@ -269,7 +269,8 @@ img.adPic {
 }
 
 
-/* create post */
+/* CREATE.HTML */
+
 fieldset#createPost {
     padding: 2%;
 }
@@ -290,6 +291,27 @@ label#description {
 }
 
 #createPostButton {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+
+/* SIGNUP.HTML */
+
+fieldset#signUp {
+    padding: 2%;
+}
+
+fieldset#signUp ul {
+    display: inline-block;
+}
+
+fieldset#signUp li {
+    list-style-type: none;
+    display: block;
+}
+
+#signUpButton {
     display: inline-block;
     margin-left: 5%;
 }
