@@ -109,11 +109,6 @@ hr {
     box-align: center;
 }
 
-div.create#search-create-bar {
-    display: block;
-    text-align: center;
-}
-
 #dropdown {
     display: inline-block;
 }
@@ -271,4 +266,30 @@ img.adPic {
 
 #bottom-page-links a {
     padding: 0em .5em;
+}
+
+
+/* create post */
+fieldset#createPost {
+    padding: 2%;
+}
+
+label#title {
+    margin-top: 2%;
+}
+#title {
+    display: block;
+}
+
+label#description {
+    display:block;
+}
+
+#description {
+    display: inline-block;
+}
+
+#createPostButton {
+    display: inline-block;
+    margin-left: 5%;
 }
