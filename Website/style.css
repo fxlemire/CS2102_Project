@@ -307,6 +307,22 @@ img.adPic {
     display: inline-block;
 }
 
+#create-post .uploadPic {
+    display: inline-block;
+    margin-left: 3%;
+    min-width: 16%;
+}
+
+#create-post .pic {
+    width: 7em;
+    height: 11em;
+}
+
+#uploadPictureButton {
+    vertical-align: super;
+    margin-left: 10%;
+}
+
 #createPostButton {
     display: inline-block;
     margin-left: 5%;
